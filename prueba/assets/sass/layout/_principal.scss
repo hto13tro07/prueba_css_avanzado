@@ -1,0 +1,157 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container{
+    
+    display: flex;
+    flex-flow: column nowrap;
+    img{
+        width: auto;
+        height: auto;
+    }
+}
+
+
+.section{
+    background-color: $colorfondo;
+    display: flex;
+    font-size: 1.2rem;
+    
+    
+    .articulos{
+        flex: 1 1 auto;
+        background-color: white;
+         img {
+        
+        max-width: 500px;
+        max-height: 250px;
+        
+
+    }
+        
+        .article{
+            background-color: white;
+        }
+        
+        li{
+            display: inline-block;
+            align-items: flex-start;
+            line-height: 1em;
+            
+            
+        }
+        p {
+            line-height: 2em;
+        }
+        
+    }
+    .aside{
+        background-color: white;
+        flex: 1 1 auto;
+         
+        .cursos{
+            background-color: white;
+            h2{
+                text-align: center;
+                color: black;
+                background-color: #b3aaa3;
+            }
+            li{
+                color: blue;
+            }
+            }
+               
+         .cursoss{
+            background-color: white;
+            border-radius: 70%;        
+        
+        }
+        .cursos1{
+            background-color: white;
+            h2{
+                text-align: center;
+              
+            }
+            li{
+            display: inline-block;            
+        }
+        }
+    .animacion{
+        animation-name: rotacion;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    #tuerca{
+        animation-name: rota_tuerca;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+
+    }
+
+    // #code{
+    //     transform: translate(20%);
+    //     animation-duration: 30s;
+    //     animation-iteration-count: ;
+    // }
+       
+    }
+
+}
+
+
+
+@keyframes rotacion{
+    from{transform: rotateZ(0deg);}
+
+    to{transform: rotateZ(360deg);}
+}
+@keyframes rota_tuerca{
+    from{transform: rotatez(360deg);}
+
+    
+}
+
+@media all and (max-width: 769px){
+    .nav{
+        display: none;
+    }
+    .section{
+        flex-direction: column;
+            img {
+                width: 100%;
+            }
+            h2 {
+                width: 100%;
+            }
+            p{
+                width: 100%;
+            }
+            
+    }
+    
+             li i{
+                flex-direction: column;
+                width: 100%;
+            }
+
+
+    @keyframes rotacion{
+    from{transform: rotateZ(0deg);}
+
+    to{transform: rotateZ(0deg);}
+}
+@keyframes rota_tuerca{
+    from{transform: rotatez(0deg);}
+
+    
+}
+
+}
+   
+
+
+     
+    

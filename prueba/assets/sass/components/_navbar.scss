@@ -1,0 +1,48 @@
+.header{
+    background-color: $colorfondo;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    .menu{
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: black;
+       
+        align-items: center;
+       
+        .logo{
+            background-color:black;
+            flex: 1 1 auto;
+            img{
+                max-height: 45px;
+                max-width: 45px;
+            }
+            
+        }
+        .nav{
+            background-color: black;
+            height: 85px;
+            justify-content: space-between;
+            flex: 1 1 auto;
+            align-items: center;
+            padding-bottom: 5px;
+            a{
+                color: white;
+                text-decoration: none;
+                
+            }
+            li{
+                display: inline-block;
+               
+            }
+           
+        }
+        .hambur{
+            color: white;
+            flex: 1 1 auto;
+        }
+    }
+    .img-principal{
+        background-color:white;
+    }
+}

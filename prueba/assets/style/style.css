@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.header .menu {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: black;
+  align-items: center;
+}
+.header .menu .logo {
+  background-color: black;
+  flex: 1 1 auto;
+}
+.header .menu .logo img {
+  max-height: 45px;
+  max-width: 45px;
+}
+.header .menu .nav {
+  background-color: black;
+  height: 85px;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.header .menu .nav a {
+  color: white;
+  text-decoration: none;
+}
+.header .menu .nav li {
+  display: inline-block;
+}
+.header .menu .hambur {
+  color: white;
+  flex: 1 1 auto;
+}
+.header .img-principal {
+  background-color: white;
+}
+
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container img {
+  width: auto;
+  height: auto;
+}
+
+.section {
+  background-color: #ffffff;
+  display: flex;
+  font-size: 1.2rem;
+}
+.section .articulos {
+  flex: 1 1 auto;
+  background-color: white;
+}
+.section .articulos img {
+  max-width: 500px;
+  max-height: 250px;
+}
+.section .articulos .article {
+  background-color: white;
+}
+.section .articulos li {
+  display: inline-block;
+  align-items: flex-start;
+  line-height: 1em;
+}
+.section .articulos p {
+  line-height: 2em;
+}
+.section .aside {
+  background-color: white;
+  flex: 1 1 auto;
+}
+.section .aside .cursos {
+  background-color: white;
+}
+.section .aside .cursos h2 {
+  text-align: center;
+  color: black;
+  background-color: #b3aaa3;
+}
+.section .aside .cursos li {
+  color: blue;
+}
+.section .aside .cursoss {
+  background-color: white;
+  border-radius: 70%;
+}
+.section .aside .cursos1 {
+  background-color: white;
+}
+.section .aside .cursos1 h2 {
+  text-align: center;
+}
+.section .aside .cursos1 li {
+  display: inline-block;
+}
+.section .aside .animacion {
+  animation-name: rotacion;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+.section .aside #tuerca {
+  animation-name: rota_tuerca;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rota_tuerca {
+  from {
+    transform: rotatez(360deg);
+  }
+}
+@media all and (max-width: 769px) {
+  .nav {
+    display: none;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+  .section img {
+    width: 100%;
+  }
+  .section h2 {
+    width: 100%;
+  }
+  .section p {
+    width: 100%;
+  }
+
+  li i {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @keyframes rotacion {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(0deg);
+    }
+  }
+  @keyframes rota_tuerca {
+    from {
+      transform: rotatez(0deg);
+    }
+  }
+}
+.footer {
+  display: flex;
+  background-color: #ffffff;
+}
+.footer .menu2 {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: black;
+  height: 100px;
+  align-items: center;
+  text-align: center;
+}
+.footer .menu2 .pie {
+  background-color: black;
+  height: 60px;
+  flex: 1 1 auto;
+  color: white;
+}
+.footer .menu2 .btn {
+  margin-right: 5px;
+  padding: 5px;
+  flex: 1 1 auto;
+  text-align: center;
+  text-decoration: none;
+}
+.footer .menu2 .btn .btn1 {
+  background-color: white;
+  color: aqua;
+}
+.footer .menu2 .btn .btn2 {
+  background-color: orange;
+  color: black;
+}
+
+@media all and (max-width: 769px) {
+  .footer .menu2 {
+    flex-direction: column;
+  }
+  .footer .menu2 .btn input:hover {
+    background-color: orange;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

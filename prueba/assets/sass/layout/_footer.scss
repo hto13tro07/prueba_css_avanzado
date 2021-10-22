@@ -1,0 +1,43 @@
+.footer{
+    display: flex;
+    background-color: $colorfondo;
+        .menu2{
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: black;
+        height: 100px;
+        align-items: center;
+        text-align: center;
+        .pie{
+            background-color: black;
+            height: 60px;
+            flex: 1 1 auto;
+            color: white;
+        }
+        .btn{
+        margin-right: 5px;
+        padding: 5px;
+        flex: 1 1 auto;
+        text-align: center;
+        text-decoration: none;
+        .btn1{
+            background-color: white;
+            color: aqua;
+        }
+        .btn2{
+            background-color: orange;
+            color: black;
+        }
+        }
+    }
+}
+
+@media all and (max-width: 769px){
+    .footer .menu2{
+        flex-direction: column;
+    
+    .btn input:hover{
+        background-color: orange;
+    }
+    }
+}
